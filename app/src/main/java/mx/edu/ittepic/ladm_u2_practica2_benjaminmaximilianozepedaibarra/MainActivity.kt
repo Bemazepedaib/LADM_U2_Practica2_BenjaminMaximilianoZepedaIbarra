@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.revisar.setOnClickListener{
             binding.buenas.setVisibility(View.INVISIBLE)
-
+            binding.revisar.setVisibility(View.INVISIBLE)
             var Hilo = Restantes(binding.cartas, buenas, Cartas,this)
             Hilo.start()
         }
@@ -118,6 +118,7 @@ class Restantes(cartas:ImageView, quedo:Int,baraja:Array<Carta>, este:MainActivi
         este.runOnUiThread {
             este.dCartas.setVisibility(View.VISIBLE)
             este.cartas.setImageResource(R.drawable.fondocartas)
+            este.revisar.setVisibility(View.VISIBLE)
         }
     }
 }
