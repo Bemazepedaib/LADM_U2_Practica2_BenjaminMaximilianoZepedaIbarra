@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/fondocartas">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/54"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:id="@+id/contador"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="450sp"
+        android:id="@+id/cartas"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dCartas"
+        android:text="INICIAR JUEGO" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buenas"
+        android:text="Buenas"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/revisar"
+        android:text="Revisar"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
